@@ -95,18 +95,9 @@
         <h2>Todo List</h2>
       </header>
       <main>
-        <p>sef sef</p>
-        <p>dhdhtdfghdh</p>
-        <p>adsdgsrg</p>
-        <p>AAAAA</p>
-        <p>sef sef</p>
-        <p>dhdhtdfghdh</p>
-        <p>adsdgsrg</p>
-        <p>AAAAA</p>
-        <p>sef sef</p>
-        <p>dhdhtdfghdh</p>
-        <p>adsdgsrg</p>
-        <p>AAAAA</p>
+        <% for (let i=0; i<data.length;  i++) { %>
+        <p><%= i %>. <%=  data[i] %></p>
+        <% } %>
       </main>
       <footer>
         <form action="http://localhost:8080/" method="POST">
@@ -127,7 +118,7 @@
             <button>Update Todo</button>
           </section>
           <section>
-            <input name="delete_id" placeholder="delete id" type="number" />
+            <input name="delete_id" placeholder="delete id" type="number"/>
             <button>Delete Todo</button>
           </section>
         </form>
