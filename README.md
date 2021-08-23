@@ -4,7 +4,7 @@
 
 ![](./Demo.png)
 
-> router 有 五個
+> router 有四個
 
 1. Get 所有代辦並且用 ejs 將資料和 html 模板合起來一起回傳
 
@@ -46,4 +46,4 @@ app.delete("/:id", (req, res) => {
 
 > View Engine
 
-用 ejs 
+用 ejs
